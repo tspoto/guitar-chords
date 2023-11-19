@@ -77,13 +77,13 @@ body {
     border-radius: 50%;
     padding-top: 4px;
 }
-.diagram .cell .note.string-name, .diagram .cell .note.open-string {
+.diagram .cell .note.string-name, .diagram .cell .note.open-string, .diagram .cell .note.x-string {
     background: none;
     color: #222;
 }
 .diagram .cell .note.string-name {
     color: #666;
 }
-.diagram .cell .note.open-string {
+.diagram .cell .note.open-string, .diagram .cell .note.x-string {
     font-weight: bold;
 }
