@@ -1,89 +1,141 @@
 * {
-  box-sizing:border-box;
+ box-sizing:border-box;
 }
+
 html {
-  font-size:16px;
+ font-size:16px;
+ font-family: Helvetica, Arial, sans-serif;
 }
 
 body {
  display: flex;
+ flex-flow: wrap;
  justify-content: center;
  align-items: center;
  height: 100vh;
  background-color: #fff;
- font-family: Helvetica, Arial, sans-serif;
+ text-align: center;
 }
 
-.card {
- width: 300px;
- height: 400px;
-}
-
-.card-content {
- padding: 20px;
+h1 {
+   width: 100%;
 }
 
 .page {
-    padding: 30px;
+   padding: 30px;
 }
+
+.card {
+   height: 50vh;
+}
+
 .chord-name {
-    font-size: 3rem;
-    margin: 10px 0 25px;
-    font-weight: bold;
-    text-align: center;
-    position: relative;
-    margin-left: -19px;
+   font-size: 3rem;
+   font-weight: bold;
+   text-align: center;
+   position: relative;
+   margin-right: -40px;
 }
-.diagram-wrap {
-    float: left;
-    width: 330px;
+
+/* Diagram Styles */
+.diagram {
+   margin-left: -25px;
 }
+
 .diagram .row {
-    clear: both;
+   clear: both;
 }
+
 .diagram .row.first .fret {
-    border-top: 1px solid #222;
+   border-top: 1px solid #222;
 }
+
 .diagram .row.last .fret {
-    border: 0;
+   border: 0;
 }
+
 .diagram .cell {
-    float: left;
-    position: relative;
-    width: 76px;
-    height: 32px;
+   float: left;
+   position: relative;
+   width: 76px;
+   height: 32px;
 }
+
 .diagram .cell.fret {
-    border: 1px solid #222;
-    border-top: 0;
+   border: 1px solid #222;
+   border-top: 0;
 }
+
 .diagram .cell.fret:not(:last-of-type) {
-    border-right: 0;
+   border-right: 0;
 }
+
 .diagram .cell.label {
-    width: 20px;
+   width: 20px;
 }
+
 .diagram .cell .note {
-    position: absolute;
-    z-index: 2;
-    width: 26px;
-    height: 26px;
-    left: 50%;
-    margin-left: -13px;
-    margin-top: -13px;
-    color: #fff;
-    background: #222;
-    text-align: center;
-    border-radius: 50%;
-    padding-top: 4px;
+   position: absolute;
+   z-index: 2;
+   width: 26px;
+   height: 26px;
+   left: 50%;
+   margin-left: -13px;
+   margin-top: -13px;
+   color: #fff;
+   background: #222;
+   text-align: center;
+   border-radius: 50%;
+   padding-top: 4px;
 }
+
 .diagram .cell .note.string-name, .diagram .cell .note.open-string, .diagram .cell .note.x-string {
-    background: none;
-    color: #222;
+   background: none;
+   color: #222;
 }
+
 .diagram .cell .note.string-name {
-    color: #666;
+   color: #666;
 }
+
 .diagram .cell .note.open-string, .diagram .cell .note.x-string {
-    font-weight: bold;
+   font-weight: bold;
+}
+
+/* UI Styling */
+body {
+ background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+
+h1 {
+ text-align: center;
+ color: #333;
+ font-size: 4em;
+ margin-bottom: 20px;
+}
+
+.chord-name {
+ text-align: center;
+ color: #666;
+ font-size: 3em;
+ margin-bottom: 60px;
+}
+
+button {
+ display: block;
+ width: 100%;
+ padding: 10px;
+ background-color: #007BFF;
+ color: #fff;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ text-align: center;
+ font-size: 1.2em;
+}
+
+button:hover {
+ background-color: #0056b3;
 }

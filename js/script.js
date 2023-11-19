@@ -27,10 +27,6 @@ document.getElementById('next_button').addEventListener('click', function() {
     display_chord();
 });
    
-/*document.getElementById('repeat_button').addEventListener('click', function() {
-    display_chord();
-});*/
-
 shuffle_array(cards);
 display_chord();
 })
