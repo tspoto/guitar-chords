@@ -112,8 +112,8 @@ body {
 h1 {
  text-align: center;
  color: #333;
- font-size: 4em;
- margin-bottom: 20px;
+ font-size: 3em;
+ margin-bottom: .25em;
 }
 
 .chord-name {
@@ -126,14 +126,15 @@ h1 {
 button {
  display: block;
  width: 100%;
- padding: 10px;
+ padding: 30px;
  background-color: #007BFF;
  color: #fff;
  border: none;
  border-radius: 5px;
  cursor: pointer;
  text-align: center;
- font-size: 1.2em;
+ font-size: 2em;
+ margin: 1em 0;
 }
 
 button:hover {
