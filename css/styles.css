@@ -33,6 +33,7 @@ h1 {
 }
 
 .card {
+   cursor: pointer; 
    min-height: 50vh;
    background-color: #fff;
    padding: 2em;
