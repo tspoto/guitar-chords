@@ -5,6 +5,8 @@
 html {
  font-size:16px;
  font-family: Helvetica, Arial, sans-serif;
+ line-height: 1.15; 
+
 }
 
 body {
@@ -13,9 +15,13 @@ body {
  justify-content: center;
  align-items: center;
  height: 100vh;
- min-height: 800px;
- background-color: #fff;
+ min-height: 666px;
+ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="%23291749" /></svg>');
+ background-position: center calc(100% - 400px);
+ background-size: 200%;
+ background-repeat: no-repeat;
  text-align: center;
+ color: #fff;
 }
 
 h1 {
@@ -27,21 +33,25 @@ h1 {
 }
 
 .card {
-   height: 50vh;
+   min-height: 50vh;
+   background-color: #fff;
+   padding: 2em;
+   border-radius: 25px;
+   box-shadow: 0 2px 4px rgba(22, 22, 22, .1);
 }
 
 .chord-name {
-   font-size: 3rem;
-   font-weight: bold;
-   text-align: center;
-   position: relative;
-   margin-right: -40px;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    color: #1f1137;
+    line-height: 1;
+    margin: 0 auto;
+    padding-bottom: 0.75em;
 }
 
 /* Diagram Styles */
-.diagram {
-   margin-left: -25px;
-}
 
 .diagram .row {
    clear: both;
@@ -104,40 +114,29 @@ h1 {
 }
 
 /* UI Styling */
-body {
- background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
- background-repeat: no-repeat;
- background-attachment: fixed;
-}
+
 
 h1 {
  text-align: center;
- color: #333;
- font-size: 3em;
+ font-size: 2em;
  margin-bottom: .25em;
 }
 
-.chord-name {
- text-align: center;
- color: #666;
- font-size: 3em;
- margin-bottom: 60px;
-}
 
 button {
  display: block;
  width: 100%;
  padding: 30px;
- background-color: #007BFF;
+ background-color: #291749;
  color: #fff;
  border: none;
  border-radius: 5px;
  cursor: pointer;
  text-align: center;
  font-size: 2em;
- margin: 1em 0;
-}
+ margin: 0.5em;
+ }
 
 button:hover {
- background-color: #0056b3;
+ background-color: #1f1137;
 }
