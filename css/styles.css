@@ -34,7 +34,7 @@ h1 {
 
 .card {
    cursor: pointer; 
-   min-height: 50vh;
+   height: 350px;
    background-color: #fff;
    padding: 2em;
    border-radius: 25px;
