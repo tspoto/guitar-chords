@@ -17,6 +17,14 @@ The flashcards are contained in the `chord-html` directory, with each chord havi
     |-- index.html
     |-- css
     |   |-- style.css
+    |-- audio-samples
+        |-- a.mp3
+        |-- a7.mp3
+        |-- ...
+        |-- g.html
+    |-- img
+    |   |-- play-audio.svg
+    |   |-- pause-audio.svg
     |-- js
     |   |-- chords.json
     |   |-- script.js
@@ -32,5 +40,4 @@ The flashcards are contained in the `chord-html` directory, with each chord havi
 This project is a work in progress, and there are plans to introduce the following features in future updates:
 
 - **Difficulty Levels:** Implement different difficulty levels for users at various skill levels.
-- **Audio Examples:** Add audio samples for each chord to help users recognize and play them accurately.
 - **Enhanced User Interface:** Improve the design and add more interactive elements.

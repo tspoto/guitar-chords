@@ -14,7 +14,7 @@ body {
  flex-flow: wrap;
  justify-content: center;
  align-items: center;
- height: 100vh;
+ height: 105vh;
  min-height: 666px;
  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="%23291749" /></svg>');
  background-position: center calc(100% - 400px);
