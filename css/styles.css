@@ -155,11 +155,11 @@ h1 {
 }
 
 .play-sample {
-   background-image: url('/img/play-audio.svg');
+   background-image: url('../img/play-audio.svg');
 }
 
 .pause-sample {
-   background-image: url('/img/pause-audio.svg');
+   background-image: url('../img/pause-audio.svg');
 }
 
 .visually-hidden {
