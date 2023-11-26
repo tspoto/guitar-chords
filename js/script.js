@@ -38,13 +38,43 @@ fetch('js/chords.json')
  }
  });
 
- // Add click event listener to all elements with class "card"
- var elements = document.getElementsByClassName("card");
- for (var i = 0; i < elements.length; i++) {
-  elements[i].addEventListener('click', next_card);
- }
-
  shuffle_array(cards);
  display_chord();
 })
 .catch(error => console.error('Error:', error));
+
+
+//Audio Player Controls
+
+function playAudio() {
+
+    var audio = document.getElementById('player');
+    var play_button = document.getElementById('play');
+    var pause_button = document.getElementById('pause');
+
+    audio.addEventListener('play', function() {
+        play_button.style.display = 'none'; 
+        pause_button.style.removeProperty("display");
+
+    });
+
+    audio.addEventListener('pause', function() {
+        pause_button.style.display = 'none'; 
+        play_button.style.removeProperty("display");
+    });
+
+    audio.currentTime = 0; // Start at the beginning every time
+    audio.play();
+ }
+
+ //Audio Player Controls
+function pauseAudio() {
+    var audio = document.getElementById('player');
+    var play_button = document.getElementById('play');
+    var pause_button = document.getElementById('pause');
+
+    pause_button.style.display = 'none'; 
+    play_button.style.removeProperty("display");
+    
+    audio.pause();
+ }
